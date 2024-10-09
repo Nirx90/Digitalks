@@ -46,10 +46,10 @@
             <li class="navy"><a href="#services">Services</a></li>
             <li class="navy"><a href="#work">Work</a></li>
             <li class="navy"><a href="#aboutus">About us</a></li>
-            <li class="navy"><a href="#clients">Clients</a></li>
+            <!-- <li class="navy"><a href="#clients">Clients</a></li> -->
             <li class="navy"><a href="#contact">Contact</a></li>
             <li>
-              <iconify-icon icon="bytesize:search" class="search-icon"></iconify-icon>
+              <iconify-icon style="display: none;" icon="bytesize:search" class="search-icon"></iconify-icon>
             </li>
           </ul>
         
@@ -57,9 +57,6 @@
     
 
     <section class="background">
-        <div class="nilesh">
-          <img src="Images/nilesh.png" class="nilesh-image" alt="" srcset="">
-        </div>
         <div class="let1">
           <h1 class="web-dev-agen">Web Development<br>Agency</h1>
         <a href="#services"><button class="btn-getting-started">Getting Started</button></a>
@@ -510,22 +507,79 @@
             </div>
             <div class="head">
                 <div style="display: flex; flex-direction: column; gap:30px;">
-                    <div class="horizontal-line"></div>
+                    <!-- <div class="horizontal-line"></div> -->
                 <h1 style="font-size: 30px;">Works.</h1>
                 <h4 style="color: rgb(254,78,78); margin-top: -15px;">OUR WORK</h4>
                 </div>
                 <div style="margin-right: 10%;">
-                    <button class="view-all-btn">
-                        View All
-                    </button>
-                </div>
+                  <button class="view-all-btn" style="display: none;">
+                      View All
+                  </button>
+              </div>
+              
             </div>
         </div>
 
         <div class="carousel-ap">
-            <div class="cello"><img src="Images/ivf.png" alt=""></div>
-            <div class="cello"><img src="Images/ivf2.png" alt=""></div>
-            <div class="cello"><img src="Images/merena.png" alt=""></div>
+            <div class="cello"  data-bs-toggle="modal" data-bs-target="#exampleModalw1">
+              <h3>Landing Page</h3>
+              <img src="Images/ivf.png" alt="">
+            </div>
+            <div class="cello" data-bs-toggle="modal" data-bs-target="#exampleModalw2">
+              <h3>Landing Page</h3>
+              <img src="Images/ivf2.png" alt="">
+            </div>
+            <!-- <a href="" data-bs-toggle="modal" data-bs-target="#exampleModalw3"><div class="cello"><img src="Images/merena.png" alt=""></div></a> -->
+            
+        </div>
+
+        <div class="modal fade" id="exampleModalw1" tabindex="-1" aria-labelledby="exampleModalw1" aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <img src="Images/mom1.png"  style="height: fit-content; width: 100%;" alt="" srcset="">
+                  <img src="Images/mom2.png" style="height: fit-content; width: 100%;" alt="" srcset="">
+                  <img src="Images/mom3.png" style="height: fit-content; width: 100%;" alt="" srcset="">
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="exampleModalw2" tabindex="-1" aria-labelledby="exampleModalw2" aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <img src="Images/ivflogo1.png"  style="height: fit-content; width: 100%;" alt="" srcset="">
+                  <img src="Images/ivflogo2.png" style="height: fit-content; width: 100%;" alt="" srcset="">
+                  <img src="Images/ivflogo3.png" style="height: fit-content; width: 100%;" alt="" srcset="">
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+
+        <div class="modal fade" id="exampleModalw1" tabindex="-1" aria-labelledby="exampleModalw1" aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <img src="Images/mom1.png"  style="height: fit-content; width: 100%;" alt="" srcset="">
+                  <img src="Images/mom2.png" style="height: fit-content; width: 100%;" alt="" srcset="">
+                  <img src="Images/mom3.png" style="height: fit-content; width: 100%;" alt="" srcset="">
+              </div>
+              
+            </div>
+          </div>
         </div>
         <!-- <script type="text/javascript">
 
@@ -540,7 +594,7 @@
     </section>
 
     <section class="about" id="aboutus">
-        <div style="display: flex; align-items: center;justify-content: center;">
+        <div style="display: none; align-items: center;justify-content: center;">
             <div class="verticle-line"></div>
         </div>
         <div class="head">
@@ -557,39 +611,36 @@
         <div class="about-box">
             <div class="abox1">
                 <div class="img">
-                    <img src="Images/Teamwork.jpg" style="height: auto; width: 100%;" alt="">
+                    <img src="Images/pexels-fauxels-3183197.jpg" style="height: auto; width: 100%;" alt="">
                 </div>
                 <p style="font-size: 30px; font-weight: bold;">Who we are</p>
-                <p style="font-size: 20px;">Bring to the table win-win survival strategies to ensure productive
-                    domination. At the end of the day, going forward will have multiple touchpoints for offshoring</p>
+                <p style="font-size: 20px;">At Digitalks, we are a forward-thinking web development and web application company committed to delivering innovative, customized digital solutions. Our mission is to empower businesses with cutting-edge websites and applications that not only meet their current needs but also scale with future growth. With a focus on creativity, technology, and client satisfaction, we help brands elevate their online presence and achieve lasting success in the digital landscape. Whether it’s creating responsive websites, developing complex web applications, or providing seamless user experiences, we are your partners in digital transformation.</p>
             </div>
             <div class="abox1">
                 <div class="img">
-                    <img src="Images/philosophy.jpg" style="height: auto; width: 100%;" alt="">
+                    <img src="Images/pexels-didsss-5499551.jpg" style="height: auto; width: 100%;" alt="">
                 </div>
                 <p style="font-size: 30px; font-weight: bold;">Our Philosophy</p>
-                <p style="font-size: 20px;">A new normal that has evolved from generation X is on the heading towards a
-                    streamline could solution. User generated content in real-time</p>
+                <p style="font-size: 20px;">At Digitalks, our philosophy revolves around innovation, collaboration, and excellence. We believe in delivering tailored digital solutions that solve real business challenges while maintaining a user-first approach. By staying ahead of industry trends and fostering strong client relationships, we strive to create web solutions that drive growth, enhance user experiences, and ensure long-term success in the ever-evolving digital world.</p>
             </div>
             <div class="abox1">
                 <div class="img">
-                    <img src="Images/office.jpg" style="height: auto; width: 100%;" alt="">
+                    <img src="Images/pexels-canvastudio-3153207.jpg" style="height: auto; width: 100%;" alt="">
                 </div>
                 <p style="font-size: 30px; font-weight: bold;">How we are</p>
-                <p style="font-size: 20px;">Capitalize on low hanging fruit to identify a ballpark value added activity
-                    to beta test. Override the digital divide with additional clickthroughs from DevOps.</p>
+                <p style="font-size: 20px;">At Digitalks, we are a team of passionate web developers, designers, and strategists who believe in the power of digital transformation. We combine creativity with technical expertise to build innovative websites and web applications that are tailored to your business needs. With a collaborative approach and a commitment to delivering excellence, we turn ideas into powerful digital experiences that help businesses thrive online.</p>
             </div>
         </div>
-        <div style="display: flex; align-items: center;justify-content: center;">
+        <div style="display: none; align-items: center;justify-content: center;">
             <div class="verticle-line"></div>
         </div>
 
     </section>
 
-    <section class="review" id="clients">
+    <section style="display: none;" class="review" id="clients">
         <div class="reviewhead">
             <div>
-                <img src="Images/client.jpg" style="width: 100%; height: auto;" alt="">
+                <img src="Images/pexels-bylukemiller-17739168.jpg" style="width: 100%; height: auto;" alt="">
             </div>
             <div style="margin-top: 2%; display: flex;flex-direction: column; gap: 20px;">
                 <div class="horizontal-line"></div>
@@ -718,7 +769,7 @@
                 </div>
             </div>
         </div> -->
-        <div style="display: flex; align-items: center;justify-content: center;">
+        <div   style="display: none; align-items: center;justify-content: center;">
             <div class="verticle-line"></div>
         </div>
     </section>
@@ -767,9 +818,9 @@
     </section>
 
     <footer class="footer" id="contact">
-        <div class="footer-contact">
-            <div>
-                <div style="display: flex;gap:1vw;">
+        <div class="footer-contact" style="display: none;"  >
+            <div style="display: none;">
+                <div style="display: none;">
                     <a href="" style="text-decoration: none;" target="_blank">
                         <div class="icons">
                             <iconify-icon icon="gg:facebook"></iconify-icon>
@@ -793,8 +844,8 @@
                     </a>
                 </div>
             </div>
-            <h1 style="color: white;font-size: 5vh;">Let's Talk?</h1>
-            <button class="btn-inquary" data-bs-toggle="modal" data-bs-target="#exampleModalfm">Make an enquiry!</button>
+            <h1 style="display: none;" style="color: white;font-size: 5vh;">Let's Talk?</h1>
+            <button class="btn-inquary" data-bs-toggle="modal"  style="display: none;" data-bs-target="#exampleModalfm">Make an enquiry!</button>
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabelfm" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
@@ -858,87 +909,7 @@
                 <a href="privacy.html" target="_blank" >Privacy Policy</a>
                 
             </div>
-            <div class="modal fade " id="exampleModalpolicy" tabindex="-1" aria-labelledby="exampleModalpolicy" aria-hidden="true">
-              <div class="modal-dialog modal-xl">
-                <div class="modal-content ">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Privacy Policy
-                  </h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    Privacy Policy <br>
-                    Effective Date: 1st Oct 2024 <br>
-                    At DigiTalks Techno LLP, we value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website [www.digitalks.co.in] or use our web development services.
-                   <br> By using our Website or services, you agree to the collection and use of information in accordance with this Privacy Policy. If you do not agree, please do not use our Website or services.
-                    <br><h4>1. Information We Collect</h4>
-                    We may collect the following types of information: <br>
-                    a. Personal Information <br>
-                    Personal data refers to any information that can identify you as an individual. The personal information we may collect includes but is not limited to: <br>
-                    <ul>
-
-                      <li>Name</li>
-                      <li>Email Address</li>
-                      <li>Phone Number</li>
-                      <li>COmpany name</li>
-                      <li>IP address</li>
-                    </ul>
-                    
-                    b. Non-Personal Information
-                    We also collect non-personal information that cannot be used to identify you. This may include:
-                    •	Browser type
-                    •	Device type
-                    •	Time and date of visits
-                    •	Pages viewed on the Website
-                    •	Referring website URLs
-                    c. Cookies
-                    We may use cookies, web beacons, and other tracking technologies to collect information about your activities on our Website. You can control the use of cookies at the browser level. If you disable cookies, some features of the Website may be unavailable.
-                    2. How We Use Your Information
-                    We use the information we collect in the following ways:
-                    •	To provide and maintain our Website and services
-                    •	To communicate with you, including responding to inquiries or providing customer support
-                    •	To process transactions
-                    •	To improve our Website, products, and services
-                    •	To conduct analytics and research
-                    •	To send you marketing communications, newsletters, or promotional content (you can opt out at any time)
-                    •	To comply with legal obligations
-                    3. How We Share Your Information
-                    We do not sell or rent your personal information. However, we may share your information in the following circumstances:
-                    •	Service Providers: We may share your information with third-party service providers who perform functions on our behalf, such as payment processing, data analysis, and email delivery.
-                    •	Business Transfers: If we merge, sell, or transfer parts of our business, your information may be transferred as part of the transaction.
-                    •	Legal Requirements: We may disclose your information if required by law or to protect our rights, comply with legal processes, or defend against legal claims.
-                    4. Data Security
-                    We implement appropriate technical and organizational measures to protect your personal information from unauthorized access, use, or disclosure. However, no internet transmission or electronic storage method is completely secure, and we cannot guarantee absolute security.
-                    5. Your Data Protection Rights
-                    Depending on your location, you may have the following rights regarding your personal data:
-                    •	Access: You can request access to the personal data we hold about you.
-                    •	Rectification: You can request that we correct inaccurate or incomplete data.
-                    •	Deletion: You can request that we delete your personal data under certain conditions.
-                    •	Restriction of Processing: You can request that we limit how we use your data.
-                    •	Portability: You can request that we transfer your data to another organization or to you.
-                    •	Objection: You can object to the processing of your personal data.
-                    To exercise any of these rights, please contact us using the details in Section 10.
-                    6. Third-Party Links
-                    Our Website may contain links to third-party websites. We are not responsible for the privacy practices of those websites. We encourage you to review their privacy policies before providing any personal information.
-                    7. Children's Privacy
-                    Our Website and services are not directed toward individuals under the age of 16. We do not knowingly collect personal data from children. If you believe we have collected data from a child, please contact us, and we will take appropriate steps to delete the information.
-                    8. International Transfers
-                    Your personal information may be transferred to, and processed in, countries other than the one in which you reside. We ensure that such transfers comply with applicable data protection laws and that your information remains protected.
-                    9. Changes to This Privacy Policy
-                    We may update this Privacy Policy from time to time. When we do, we will revise the "Effective Date" at the top of the page. We encourage you to review this Privacy Policy regularly to stay informed about our information practices.
-                    10. Contact Us
-                    If you have any questions or concerns about this Privacy Policy or how we handle your personal information, please contact us at:
-                    DigiTalks Techno LLP
-                    Email: amit@digitalks.co.in 
-                    Address: 705, Raghivir Celebum, Saroli 
-                    
-                    
-
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
+            
         </div>
     </footer>
 
