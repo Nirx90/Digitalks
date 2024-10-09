@@ -27,32 +27,31 @@
 <!-- <img src="Images/Screenshot (2).png" alt=""> -->
 <body>
     <nav>
-        <!-- Checkbox for toggling menu -->
-        <input type="checkbox" id="check">
-    
-        <!-- Menu icon -->
-        <label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i>
+
+        <label  class="checkbtn" onclick="shownav()">
+          <i class="fas fa-bars" ></i>
+        </label>
+        <label  class="cross" onclick="hidenav()">
+          <i class="fa-solid fa-xmark navy"></i>
         </label>
     
         <!-- Site logo -->
          
-           <label class="logo"><a href="" ><img src="Images/DigiLogocropped.jpg" alt="" srcset=""></a></label>
+           <label class="logo"><a href="#" ><img src="Images/DigiLogocropped.jpg" alt="" srcset=""></a></label>
         
     
         <!-- Navigation links -->
-          <ul>
-            <li class="navy"><a class="" href="#">Home</a></li>
-            <li class="navy"><a href="#services">Services</a></li>
-            <li class="navy"><a href="#work">Work</a></li>
-            <li class="navy"><a href="#aboutus">About us</a></li>
-            <!-- <li class="navy"><a href="#clients">Clients</a></li> -->
-            <li class="navy"><a href="#contact">Contact</a></li>
+          <ul class="hide">
+            <li class="navy"><a class="" href="#" onclick="hidenav()">Home</a></li>
+            <li class="navy"><a href="#services" onclick="hidenav()">Services</a></li>
+            <li class="navy"><a href="#work" onclick="hidenav()">Work</a></li>
+            <li class="navy"><a href="#aboutus" onclick="hidenav()">About us</a></li>
+            <!-- <li class="navy"><a href="#cli ents">Clients</a></li> -->
+            <li class="navy"><a href="#contact" onclick="hidenav()">Contact</a></li>
             <li>
               <iconify-icon style="display: none;" icon="bytesize:search" class="search-icon"></iconify-icon>
             </li>
           </ul>
-        
       </nav>
     
 
@@ -903,9 +902,9 @@
             
         </div>
         <div class="copyright">
-            <div style="display: flex; align-items: center; gap: 20px;">
-                <h1 style="font-size: 25px;color: white;">2024 &copy; </h1>
-                <h2 style="font-size: 25px; opacity: 0.5;color: white;">Digitalks, All rights reserved</h2>
+            <div style="display: flex; align-items: center;" class="sakshi">
+                <h1 style="font-size: 3vh;color: white;">2024 &copy; </h1>
+                <h2 style="font-size: 3vh; opacity: 0.5;color: white;">Digitalks, All rights reserved</h2>
             </div>
             <div class="terms">
                 
