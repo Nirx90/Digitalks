@@ -69,13 +69,7 @@ nav ul li a {
     display: none;
 }
   
-.cross{
-  font-size: 22px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 30px;
-    cursor: pointer;
+#check {
     display: none;
 }
   
@@ -104,6 +98,7 @@ nav ul li a {
     .checkbtn {
       display: block;
     }
+  
     .logo{
       margin-left: 3%;
       /* margin-top: 10%; */
@@ -119,7 +114,7 @@ nav ul li a {
       text-align: center;
       transition: all .5s; 
       font-weight: bolder;
-      left: -100%;
+      top: -100%;
       z-index: -1;
       /* display: ''; */
     }
@@ -319,6 +314,13 @@ nav ul li a {
         cursor: pointer;
         box-shadow: inset 11em 0 0 0 #e9204f;
     }
+}
+
+.abox1{
+  height: fit-content;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 2rem;
+  border-radius: 1.5rem;
 }
 
 .about{
@@ -542,7 +544,7 @@ nav ul li a {
 .terms a{
     text-decoration: none;
     color: white;
-    font-size: 2.5vh;
+    font-size: 2rem;
 }
 
 .icons{
@@ -626,12 +628,27 @@ nav ul li a {
     display: none;
 }
 
-
+.copyh1{
+  font-size: 1.5rem;
+  color: white;
+}
+.copyh2{
+  opacity: .75;
+  color:white;
+}
+.call-icon{
+  font-size: 2rem;
+  color: white;
+}
 
 @media (max-width: 1024px) {
     .hero-boxes {
         display: flex;
         flex-direction: column; /* Stack horizontally on larger screens */
+    }
+    .number{
+      /* flex-direction: column; */
+      padding: 0% 10%;
     }
 
     .background{
@@ -728,14 +745,14 @@ nav ul li a {
     }
     .copyright{
         flex-direction: column;
-        /* gap: 10px; */
-        padding: 2% 0%;
+        gap: 10px;
+        /* padding: 1% 1%; */
         align-items: center;
-        justify-items: center;
+        /* justify-items: center; */
     }
-    .sakshi{
-      margin: 0;
-      padding: 0;
+    .copyh1,.copyh2{
+      font-size: 1rem;
+      /* color: #e9204f; */
     }
     .subhead1{
         width: 100%;
@@ -746,6 +763,13 @@ nav ul li a {
     .background{
       background-size: contain; /* Adjust for smaller screens */
       /* background-attachment: scroll; */
+    }
+    .terms a{
+      font-size: 1rem;
+    }
+    .call-icon{
+      font-size: 1.5rem;
+      color: white;
     }
 }
 
