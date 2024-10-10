@@ -27,24 +27,17 @@
 <!-- <img src="Images/Screenshot (2).png" alt=""> -->
 <body>
     <nav>
-        <!-- Checkbox for toggling menu -->
-        <!-- <input type="checkbox" id="check"> -->
-        
-        <!-- Menu icon -->
-        <label  class="checkbtn" >
-          <i class="fas fa-bars" onclick="shownav()"></i>
-          <!-- <i class="fa-solid fa-xmark"></i> -->
-        </label>
-    
-        <!-- Site logo -->
-         
-           <label class="logo"><a href="" ><img src="Images/DigiLogocropped.jpg" alt="" srcset=""></a></label>
-        
+      <label class="logo"><a href="#" ><img src="Images/DigiLogocropped.jpg" alt="" srcset=""></a></label>
+      <label  class="checkbtn" onclick="shownav()">
+        <i class="fas fa-bars" ></i>
+      </label>
+      <label  class="cross" onclick="hidenav()">
+        <i class="fa-solid fa-xmark navy"></i>
+      </label>
     
         <!-- Navigation links -->
           <ul class="hide">
-            <li>
-             <i class="fa-solid fa-xmark navy" onclick="hidenav()"></i></li>
+            
             <li class="navy"><a class="" href="#" onclick="hidenav()">Home</a></li>
             <li class="navy"><a href="#services" onclick="hidenav()">Services</a></li>
             <li class="navy"><a href="#work" onclick="hidenav()">Work</a></li>
