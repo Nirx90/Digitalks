@@ -27,21 +27,24 @@
 <!-- <img src="Images/Screenshot (2).png" alt=""> -->
 <body>
     <nav>
-
-        <label  class="checkbtn" onclick="shownav()">
-          <i class="fas fa-bars" ></i>
-        </label>
-        <label  class="cross" onclick="hidenav()">
-          <i class="fa-solid fa-xmark navy"></i>
+        <!-- Checkbox for toggling menu -->
+        <!-- <input type="checkbox" id="check"> -->
+        
+        <!-- Menu icon -->
+        <label  class="checkbtn" >
+          <i class="fas fa-bars" onclick="shownav()"></i>
+          <!-- <i class="fa-solid fa-xmark"></i> -->
         </label>
     
         <!-- Site logo -->
          
-           <label class="logo"><a href="#" ><img src="Images/DigiLogocropped.jpg" alt="" srcset=""></a></label>
+           <label class="logo"><a href="" ><img src="Images/DigiLogocropped.jpg" alt="" srcset=""></a></label>
         
     
         <!-- Navigation links -->
           <ul class="hide">
+            <li>
+             <i class="fa-solid fa-xmark navy" onclick="hidenav()"></i></li>
             <li class="navy"><a class="" href="#" onclick="hidenav()">Home</a></li>
             <li class="navy"><a href="#services" onclick="hidenav()">Services</a></li>
             <li class="navy"><a href="#work" onclick="hidenav()">Work</a></li>
@@ -613,21 +616,39 @@
                     <img src="Images/pexels-fauxels-3183197.jpg" style="height: auto; width: 100%;" alt="">
                 </div>
                 <p style="font-size: 30px; font-weight: bold;">Who we are</p>
-                <p style="font-size: 20px;">At Digitalks, we are a forward-thinking web development and web application company committed to delivering innovative, customized digital solutions. Our mission is to empower businesses with cutting-edge websites and applications that not only meet their current needs but also scale with future growth. With a focus on creativity, technology, and client satisfaction, we help brands elevate their online presence and achieve lasting success in the digital landscape. Whether it’s creating responsive websites, developing complex web applications, or providing seamless user experiences, we are your partners in digital transformation.</p>
+                <p style="font-size: 20px; text-align:justify;">At Digitalks, we are a forward-thinking web development and web application company committed to delivering innovative, customized digital solutions. Our mission is to empower businesses with cutting-edge websites and applications that not only meet their current needs but also scale with future growth. With a focus on creativity, technology, and client satisfaction, we help brands  elevate their
+                  online presence and achieve lasting <a href="" data-bs-toggle="modal" data-bs-target="#exampleModalrm4">Read more....</a> </p>
             </div>
+            <div class="modal fade" id="exampleModalrm4" tabindex="-1" aria-labelledby="exampleModalLabelrm4" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body" style="text-align: justify;">
+                    At Digitalks, we are a forward-thinking web development and web application company committed to delivering innovative, customized digital solutions. Our mission is to empower businesses with cutting-edge websites and applications that not only meet their current needs but also scale with future growth. With a focus on creativity, technology, and client satisfaction, we help brands elevate their
+                    online presence and achieve lasting success in the digital landscape. Whether it’s creating responsive websites, 
+                    developing complex web applications, or providing seamless user experiences, we are your partners in digital transformation.
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+
             <div class="abox1">
                 <div class="img">
                     <img src="Images/pexels-didsss-5499551.jpg" style="height: auto; width: 100%;" alt="">
                 </div>
                 <p style="font-size: 30px; font-weight: bold;">Our Philosophy</p>
-                <p style="font-size: 20px;">At Digitalks, our philosophy revolves around innovation, collaboration, and excellence. We believe in delivering tailored digital solutions that solve real business challenges while maintaining a user-first approach. By staying ahead of industry trends and fostering strong client relationships, we strive to create web solutions that drive growth, enhance user experiences, and ensure long-term success in the ever-evolving digital world.</p>
+                <p style="font-size: 20px; text-align:justify;">At Digitalks, our philosophy revolves around innovation, collaboration, and excellence. We believe in delivering tailored digital solutions that solve real business challenges while maintaining a user-first approach. By staying ahead of industry trends and fostering strong client relationships, we strive to create web solutions that drive growth, enhance user experiences, and ensure long-term success in the ever-evolving digital world.</p>
             </div>
             <div class="abox1">
                 <div class="img">
                     <img src="Images/pexels-canvastudio-3153207.jpg" style="height: auto; width: 100%;" alt="">
                 </div>
                 <p style="font-size: 30px; font-weight: bold;">How we are</p>
-                <p style="font-size: 20px;">At Digitalks, we are a team of passionate web developers, designers, and strategists who believe in the power of digital transformation. We combine creativity with technical expertise to build innovative websites and web applications that are tailored to your business needs. With a collaborative approach and a commitment to delivering excellence, we turn ideas into powerful digital experiences that help businesses thrive online.</p>
+                <p style="font-size: 20px; text-align:justify;">At Digitalks, we are a team of passionate web developers, designers, and strategists who believe in the power of digital transformation. We combine creativity with technical expertise to build innovative websites and web applications that are tailored to your business needs. With a collaborative approach and a commitment to delivering excellence, we turn ideas into powerful digital experiences that help businesses thrive online.</p>
             </div>
         </div>
         <div style="display: none; align-items: center;justify-content: center;">
@@ -893,22 +914,25 @@
         <div
             class="number">
             <div style="display: flex;justify-content: center;text-align: center; align-items: center;">
-             <h1 style="color: white; font-size: 2.5vh;"> 705,  Raghuvir Celenium, Saroli,Surat - 395010</h1>
+             <h1 class="copyh1"> 705,  Raghuvir Celenium, Saroli,Surat - 395010</h1>
             </div>
             <div style="display: flex;justify-content: center;align-items: center; flex-direction: column;gap: -80px;">
-                <h1 style="color: white; font-size: 2.5vh;">Surat.</h1>
-                <h1 style="color: white; font-size: 2.5vh;">+91 9974401999</h1>
+                <h1 class="copyh1">Surat.</h1>
+                <div style="display: flex; align-items: center;">
+                  <iconify-icon icon="fluent:call-24-filled" class="call-icon"></iconify-icon>
+                  <h1 class="copyh1">+91 9974401999</h1>
+                </div>
             </div>
             
         </div>
         <div class="copyright">
-            <div style="display: flex; align-items: center;" class="sakshi">
-                <h1 style="font-size: 3vh;color: white;">2024 &copy; </h1>
-                <h2 style="font-size: 3vh; opacity: 0.5;color: white;">Digitalks, All rights reserved</h2>
+            <div style="display: flex; align-items: center;justify-content: space-between;">
+                <h1 class="copyh1">2024 &copy; </h1>
+                <h2 class="copyh2">Digitalks, All rights reserved</h2>
             </div>
             <div class="terms">
                 
-                <a href="privacy.html" target="_blank" >Privacy Policy</a>
+                <a href="privacy.html" target="_blank"  >Privacy Policy</a>
                 
             </div>
             
