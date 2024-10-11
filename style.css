@@ -177,12 +177,12 @@ nav ul li a {
   z-index: 3;
 }
 .nilesh{
-  height: 40rem;
-  width: 30rem;
+  height: 60rem;
+  width: 45rem;
   position: absolute;
-  margin-top: 8%;
+  margin-top: 8rem;
   /* z-index: 1; */
-  margin-left: 43%;
+  margin-left: 50rem;
 }
 .nilesh-image{
   height: 100%;
@@ -286,8 +286,12 @@ nav ul li a {
     padding-bottom: 8%;
     margin-top: 2%;
 }
+.work-sec{
+  margin-top: 5rem;
+  /* border: 2px solid black; */
+}
 .work{
-    padding: 5% 10%;
+    padding: 0% 10%;
 }
 .subhead1{
     display: flex; flex-direction: column; gap:30px;
@@ -365,7 +369,7 @@ nav ul li a {
     height: 60px;
     width: 3px;
     background-color: #e9204f;
-    margin: 3% 0%;
+    /* margin: 3% 0%; */
     
 }
 
